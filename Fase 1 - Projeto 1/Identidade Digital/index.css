@@ -1,0 +1,97 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+        }
+
+        header h1 {
+            margin-bottom: 5px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* SEÇÕES */
+        section {
+            padding: 50px 20px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        /* SOBRE */
+        .sobre-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .sobre-container img {
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        /* PROJETOS */
+        .projetos-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        /* CONTATO */
+        .contato a {
+            display: block;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 768px) {
+            .sobre-container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
