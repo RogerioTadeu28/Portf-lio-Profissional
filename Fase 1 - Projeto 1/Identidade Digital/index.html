@@ -1,84 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Portfólio - Rogerio Tadeu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="index.css">
+<title>Portfólio - Rogerio Tadeu</title>
 
-   
+
 </head>
 
 <body>
 
 <header>
-    <h1>Rogerio Tadeu</h1>
-    <p>Portfólio Profissional</p>
+    <div class="header-content">
+        <h1>Rogerio Tadeu</h1>
+        <p>Portfólio Profissional</p>
 
-    <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
-    </nav>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </div>
 </header>
 
 <main>
 
-    <!-- SOBRE -->
-    <section id="sobre">
+<!-- SOBRE -->
+<section id="sobre">
+    <div class="container">
         <h2>Sobre</h2>
 
-        <div class="sobre-container">
-            <img src="sua-foto.jpg" alt="Minha foto">
+        <div class="card-box">
+            <div class="sobre-container">
+                <img src="sua-foto.jpg" alt="Minha foto">
 
-            <p>
-                Sou estudante de Engenharia de Computação, com foco no desenvolvimento de sistemas web.
-                Tenho interesse em tecnologias como HTML, CSS e JavaScript, além de banco de dados.
-                Estou em constante evolução, buscando oportunidades na área de tecnologia para aplicar
-                meus conhecimentos e crescer profissionalmente.
-            </p>
+                <p>
+                    Sou estudante de Engenharia de Computação com foco em desenvolvimento web.
+                    Tenho experiência com HTML, CSS e JavaScript, além de interesse em banco de dados.
+                    Busco minha primeira oportunidade na área de tecnologia.
+                </p>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- PROJETOS -->
-    <section id="projetos">
+<!-- PROJETOS -->
+<section id="projetos">
+    <div class="container">
         <h2>Projetos</h2>
 
         <div class="projetos-container">
 
             <div class="card">
-                <h3>Sistema de Estoque</h3>
-                <p>Aplicação web para controle de inventário com entrada, saída e relatórios.</p>
+                <a href="https://estoque-velas.onrender.com/login/.">
+                <img src="../Identidade Digital/img/ControleEstoque.jpg">
+                </a>
+                <div class="card-content">
+                    <h3>Sistema de Estoque</h3>
+                    <p>Controle de inventário com entradas e saídas.</p>
+                    <p>Usuário:admin@admin.com | Senha: admin123</p>
+                </div>
             </div>
 
             <div class="card">
-                <h3>Relatório de Movimentações</h3>
-                <p>Sistema para registro de movimentações de produtos com cálculo automático.</p>
+                <a href="https://coretasks-2.onrender.com/index.html">
+                <img src="../Identidade Digital/img/CoreTasks.png">
+                </a>
+                <div class="card-content">
+                    <h3>Sistema de controle de tarefas</h3>
+                    <p>Registro das movimentações.</p>
+                </div>
             </div>
 
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- CONTATO -->
-    <section id="contato">
+<!-- CONTATO -->
+<section id="contato">
+    <div class="container">
         <h2>Contato</h2>
 
-        <div class="contato">
-            <a href="mailto:seuemail@email.com">📧 Email</a>
-            <a href="https://linkedin.com" target="_blank">🔗 LinkedIn</a>
-            <a href="https://github.com" target="_blank">💻 GitHub</a>
-            <a href="https://wa.me/5511999999999" target="_blank">📱 WhatsApp</a>
+        <div class="card-box contato-box">
+
+            <a href="mailto:rogeriosouza73@gmail.com" class="contato-item">
+                <!-- EMAIL -->
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M2 4h20v16H2z"/>
+                </svg>
+                Email: rogeriosouza73@gmail.com
+            </a>
+
+            <a href="#" class="contato-item">
+                <!-- LINKEDIN -->
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M4 4h16v16H4z"/>
+                </svg>
+                LinkedIn: www.linkedin.com/in/rogerio-souza-b20084b8
+            </a>
+
+            <a href="#" class="contato-item">
+                <!-- GITHUB -->
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0C5 0 0 5 0 12"/>
+                </svg>
+                GitHub: https://github.com/RogerioTadeu28
+            </a>
+
+            <a href="#" class="contato-item">
+                <!-- WHATSAPP -->
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2a10 10 0 0 0-8.5 15.5L2 22l4.7-1.2A10 10 0 1 0 12 2z"/>
+                </svg>
+                WhatsApp: (11) 96538-3168
+            </a>
+
         </div>
-    </section>
+    </div>
+</section>
 
 </main>
 
 <footer>
-    <p>&copy; <span id="ano"></span> - Rogerio Tadeu</p>
+    <p>&copy; <span id="ano"></span> - Rogerio Tadeu | Portfólio Profissional</p>
 </footer>
 
 <script>
-    document.getElementById("ano").textContent = new Date().getFullYear();
+document.getElementById("ano").textContent = new Date().getFullYear();
 </script>
 
 </body>

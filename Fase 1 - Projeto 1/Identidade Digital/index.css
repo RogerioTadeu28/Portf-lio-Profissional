@@ -1,97 +1,144 @@
 * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-            font-family: Arial, sans-serif;
-        }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
-        body {
-            line-height: 1.6;
-        }
+body {
+    background: #f4f6f9;
+}
 
-        /* HEADER */
-        header {
-            background: #333;
-            color: white;
-            padding: 15px;
-            position: sticky;
-            top: 0;
-        }
+/* CONTAINER */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
 
-        header h1 {
-            margin-bottom: 5px;
-        }
+/* HEADER */
+header {
+    background: #222;
+    color: white;
+}
 
-        nav {
-            margin-top: 10px;
-        }
+.header-content {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
 
-        nav a {
-            color: white;
-            margin-right: 15px;
-            text-decoration: none;
-        }
+nav a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+}
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+nav a:hover {
+    color: #00bcd4;
+}
 
-        /* SEÇÕES */
-        section {
-            padding: 50px 20px;
-        }
+/* SEÇÕES */
+section {
+    padding: 60px 0;
+}
 
-        h2 {
-            margin-bottom: 20px;
-        }
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
-        /* SOBRE */
-        .sobre-container {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 20px;
-        }
+/* CARD PADRÃO */
+.card-box {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
 
-        .sobre-container img {
-            width: 200px;
-            border-radius: 10px;
-        }
+/* SOBRE */
+.sobre-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
 
-        /* PROJETOS */
-        .projetos-container {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
+.sobre-container img {
+    width: 200px;
+    border-radius: 10px;
+}
 
-        .card {
-            border: 1px solid #ccc;
-            padding: 20px;
-            width: 300px;
-            border-radius: 10px;
-        }
+/* PROJETOS */
+.projetos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
 
-        /* CONTATO */
-        .contato a {
-            display: block;
-            margin: 10px 0;
-            color: #333;
-        }
+.card {
+    background: white;
+    border-radius: 12px;
+    width: 340px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
 
-        /* FOOTER */
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
+.card:hover {
+    transform: translateY(-8px);
+}
 
-        /* RESPONSIVO */
-        @media (max-width: 768px) {
-            .sobre-container {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* CONTATO */
+.contato-box {
+    max-width: 500px;
+    margin: auto;
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.contato-item svg {
+    width: 24px;
+    height: 24px;
+}
+
+.contato-item:hover {
+    color: #00bcd4;
+}
+
+/* FOOTER */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .sobre-container {
+        flex-direction: column;
+    }
+}
